@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('v1/company', [CompanyQueryController::class, 'indexCompany']);
 Route::get('v1/company/{id}', [CompanyQueryController::class, 'viewCompany']);
 Route::post('v1/company', [CompanyCommandController::class, 'createCompany']);
-Route::put('v1/company/{id}', [CompanyCommandController::class, 'updateCompany'])->name('company.update');
+Route::put('v1/company/{id}', [CompanyCommandController::class, 'updateCompany']);
 Route::delete('v1/company/{id}', [CompanyCommandController::class, 'deleteCompany']);
 
 
